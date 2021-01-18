@@ -19,4 +19,23 @@ When determining if the above linear model will predict the mpg of MechaCars eff
 
 The total summary table reflects a PSI variance of 62 which is well under the 100 PSI variance limit. If we are applying this rule to all vehicles as a total then we do meet the sepcification requirments. But when we crunch the numbers for each lot individually (Lot summary table) we can see that 2 lots report a lower number of PSI variance, both under 10, while lot three however displays a  PSI variance of 170 which is well over the limit of 100 proveided by the design specifications. When we look at the full set of data we see a green flag as our variance is still within the acceptable limit. But when we look at the data organized by lot we can see that one lot is returning very troubling numbers which leads to the conclusion that our total PSI variance is not where it should be. By addressing and correcting this issue our total PSI Variance will reflect a more accurate and attractive numerical value. In summary, The data reflects that overall the PSI variance is within the desin specification range except for the vehicles being produced by Lot3 which should be investigated.
 
- 
+## T-Tests on Suspension Coils
+
+### T test on all lots
+![alt text](https://github.com/sebcampos/R_analysis/blob/master/images/t-test_all_lots.png?raw=True)
+
+### T test on lot 1
+![alt text](https://github.com/sebcampos/R_analysis/blob/master/images/t-test_lot1.png?raw=True)
+
+### T test on lot 2
+![alt text](https://github.com/sebcampos/R_analysis/blob/master/images/t-test_lot2.png?raw=True)
+
+### T test on lot 3
+![alt text](https://github.com/sebcampos/R_analysis/blob/master/images/t-test_lot3.png?raw=True)
+
+When comparing The P values of every t-test, we can see the p value of our total dataset is equal to 1 which means our data is unreliable and the conclusions drawn are prone to error. When observing the P values of in relation to each lot, we can see that both lot 1 and lot 2 have P values considered to be very reliable with high probability of being accurate. Yet lot 3 show a considerably higher P value than the other two lots, possibly skewing our data. This is consistent with our findings in deliverable 1
+
+
+## Study Design: MechCar vs Competition
+
+We could quanitify how MechCar performs against the competition by focusing our anaylsis on the quality and price of a car. The category of quality would contain many sub categories but to focus on one we could turn our attention to maintenance cost. Our null hypothesis would be that the price of maintencene has no significant impact on the purchase of the car. Then we would apply a linear regression model to check if there is a substantial correlation between these two varialbles. The results would allow us to reject the null hypotheses (hopefully) and then we could perform this anaylsis on the competitors data or Maintence cost per car. If the correlation continues we can measure and determine if we need to pay more attention to these areas during production. 
