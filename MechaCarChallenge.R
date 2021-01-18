@@ -40,7 +40,6 @@ t.test(subset(Suspension_Coil_data, Manufacturing_Lot == "Lot2", select = PSI),m
 #Lot3
 t.test(subset(Suspension_Coil_data, Manufacturing_Lot == "Lot3", select = PSI),mu=mean_psi_total_summary)
 
-?t.test()
 
 
 
